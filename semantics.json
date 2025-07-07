@@ -745,7 +745,15 @@
         "label": "Deactivate sound",
         "importance": "low",
         "description": "Enabling this option will deactivate the video's sound and prevent it from being switched on."
-      }
+      },
+      {
+        "name": "watchVideoCompletely",
+        "type": "boolean",
+        "default": false,
+        "label": "Watch video completely to pass",
+        "importance": "low",
+        "description": "Require user to watch the entire video before the activity is marked passed."
+      },
     ]
   },
   {

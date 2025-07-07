@@ -303,6 +303,10 @@
         {
           "label": "Deactivate sound",
           "description": "Enabling this option will deactivate the video's sound and prevent it from being switched on."
+        },
+        {
+          "label": "Watch video completely to pass",
+          "description": "Require user to watch the entire video before the activity is marked passed."
         }
       ]
     },
