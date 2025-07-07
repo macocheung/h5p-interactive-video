@@ -110,6 +110,7 @@ function InteractiveVideo(params, id, contentData) {
     self.showRewind10 = (params.override.showRewind10 !== undefined ? params.override.showRewind10 : false);
     self.showBookmarksmenuOnLoad = (params.override.showBookmarksmenuOnLoad !== undefined ? params.override.showBookmarksmenuOnLoad : false);
     self.preventSkippingMode = params.override.preventSkippingMode || 'none';
+    self.watchVideoCompletely = params.override.watchVideoCompletely || false;
     self.deactivateSound = params.override.deactivateSound || false;
   }
   // Translated UI text defaults
@@ -918,6 +919,19 @@ InteractiveVideo.prototype.getDuration = function () {
     this.duration = this.video.getDuration();
   }
   return this.duration;
+};
+
+/**
+ * Get how much of the video has been watched in percent.
+ *
+ * @return {number} Percentage watched, 0-100.
+ */
+InteractiveVideo.prototype.getWatchedPercentage = function () {
+  const duration = this.getDuration();
+  if (!duration) {
+    return 0;
+  }
+  return Math.min(100, Math.round(this.maxTimeReached / duration * 100));
 };
 
 /**
