@@ -8,7 +8,7 @@
     "dev": "cross-env NODE_ENV='development' webpack",
     "build": "cross-env NODE_ENV='production' webpack",
     "watch": "webpack --watch",
-    "pack": "cd .. && npx --prefix h5p-interactive-video h5p pack -r h5p-interactive-video h5p-interactive-video/interactive-video.h5p"
+    "pack": "cd .. && npx --no-install --prefix h5p-interactive-video h5p pack -r h5p-interactive-video h5p-interactive-video/interactive-video.h5p"
   },
   "repository": {
     "type": "git",
