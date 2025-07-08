@@ -1,0 +1,18 @@
+{
+  "interactiveVideo": {
+    "video": {
+      "files": [
+        {
+          "path": "https://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180.mp4",
+          "mime": "video/mp4"
+        }
+      ],
+      "startScreenOptions": {
+        "title": "Sample Interactive Video"
+      }
+    },
+    "assets": {
+      "interactions": []
+    }
+  }
+}
