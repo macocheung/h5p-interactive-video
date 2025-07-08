@@ -38,7 +38,13 @@ You can then use [H5P cli](https://github.com/h5p/h5p-cli) to pack the library e
 h5p pack -r <library folder> <output file>
 ```
 
-Alternatively, you can arrange and zip files manually, but make sure to adhere to the [H5P specification](https://h5p.org/documentation/developers/h5p-specification).
+If you installed the dependencies locally you can run the provided npm script:
+
+```bash
+npm run pack
+```
+
+This will create `interactive-video.h5p` at the project root. Alternatively, you can arrange and zip files manually, but make sure to adhere to the [H5P specification](https://h5p.org/documentation/developers/h5p-specification).
 
 ## License
 
