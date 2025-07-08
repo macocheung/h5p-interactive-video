@@ -1,0 +1,14 @@
+{
+  "title": "Interactive Video Sample",
+  "language": "en",
+  "embedTypes": ["div"],
+  "mainLibrary": "H5P.InteractiveVideo",
+  "preloadedDependencies": [
+    { "machineName": "H5P.InteractiveVideo", "majorVersion": 1, "minorVersion": 27 },
+    { "machineName": "H5P.Video", "majorVersion": 1, "minorVersion": 6 },
+    { "machineName": "H5P.DragNBar", "majorVersion": 1, "minorVersion": 5 },
+    { "machineName": "H5P.Components", "majorVersion": 1, "minorVersion": 0 },
+    { "machineName": "jQuery.ui", "majorVersion": 1, "minorVersion": 10 },
+    { "machineName": "FontAwesome", "majorVersion": 4, "minorVersion": 5 }
+  ]
+}
